@@ -7,7 +7,7 @@ import json
 def search():
     website = web_entry.get()
     try:
-        with open("/Users/obrikoci/Desktop/data_pass.json", "r") as data_file:
+        with open("/Users/your_user/Desktop/data_pass.json", "r") as data_file:
                 data = json.load(data_file)
     except:
         messagebox.showinfo(title="Error!", message="Empty File. No Data Found.")
@@ -94,7 +94,7 @@ user_label = Label(text="Email/Username:")
 user_label.grid(column=0, row=2)
 
 user_entry = Entry(width=38)
-user_entry.insert(0, "obrikoci2@gmail.com")
+user_entry.insert(0, "email")
 user_entry.grid(row=2, column=1, columnspan=2)
 
 pass_label = Label(text="Password:")
